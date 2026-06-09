@@ -1,0 +1,305 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* CORPO */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#fff8f0;
+    color:#333;
+    line-height:1.6;
+}
+
+/* CABEÇALHO */
+
+header{
+    background-color:#ff7a00;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+/* MENU */
+
+nav{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:8px;
+}
+
+nav a:hover{
+    background-color:#e66a00;
+    border-radius:5px;
+}
+
+/* ACESSIBILIDADE */
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus{
+    outline:3px solid blue;
+}
+
+/* BANNER */
+
+.banner{
+    text-align:center;
+    padding:50px 20px;
+    background-color:#ffa64d;
+    color:white;
+}
+
+.banner h1{
+    margin-bottom:15px;
+}
+
+.banner p{
+    margin-bottom:20px;
+}
+
+.banner input{
+    width:300px;
+    max-width:90%;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+}
+
+/* CONTEÚDO */
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
+
+/* RECEITAS */
+
+.receitas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:20px;
+}
+
+main img{
+    width:500px;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+    display:block;
+    margin:20px auto;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0;
+    color:#ff7a00;
+}
+
+.card p{
+    padding:0 15px;
+}
+
+.card a{
+    display:inline-block;
+    margin:15px;
+    padding:10px 15px;
+    background:#ff7a00;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.card a:hover{
+    background:#e66a00;
+}
+
+/* IMAGENS DAS RECEITAS */
+
+main img{
+    max-width:100%;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+/* SEÇÕES */
+
+section{
+    margin-bottom:40px;
+}
+
+h1{
+    color:#ff7a00;
+    margin-bottom:15px;
+}
+
+h2{
+    color:#ff7a00;
+    margin-bottom:15px;
+}
+
+p{
+    margin-bottom:10px;
+}
+
+/* LISTAS */
+
+ul,
+ol{
+    margin-left:30px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* TABELA */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th{
+    background:#ff7a00;
+    color:white;
+}
+
+th,
+td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+/* VÍDEO */
+
+iframe{
+    max-width:100%;
+    border:none;
+    border-radius:10px;
+}
+
+/* FORMULÁRIO */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    max-width:500px;
+}
+
+input,
+textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    min-height:120px;
+}
+
+button{
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    background:#ff7a00;
+    color:white;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#e66a00;
+}
+
+/* RODAPÉ */
+
+footer{
+    background:#333;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+footer h2{
+    color:white;
+}
+
+footer p{
+    margin-top:15px;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .banner{
+        padding:30px 15px;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    iframe{
+        width:100%;
+        height:250px;
+    }
+
+}
