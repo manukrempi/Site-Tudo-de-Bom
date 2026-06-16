@@ -257,6 +257,21 @@ button{
 button:hover{
     background:#e66a00;
 }
+.campos{
+    display:flex;
+    gap:20px;
+    margin-bottom:15px;
+}
+.esquerda,
+.direita{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.direita textarea{
+    height:140px;
+}
 
 /* RODAPÉ */
 
@@ -284,6 +299,10 @@ footer p{
         text-align:center;
         gap:15px;
     }
+
+    .campos{
+    flex-direction:column;
+}
 
     nav{
         justify-content:center;
