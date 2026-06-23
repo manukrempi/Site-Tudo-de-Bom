@@ -1,10 +1,11 @@
+/*  Remove margens e espaçamentos padrões*/
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-/* CORPO */
+/* CORPO fonte, cores e espaçamento geral*/
 
 body{
     font-family:Arial, Helvetica, sans-serif;
@@ -13,7 +14,7 @@ body{
     line-height:1.6;
 }
 
-/* CABEÇALHO */
+/* CABEÇALHO Logo e menu de navegação */
 
 header{
     background-color:#ff7a00;
@@ -24,6 +25,7 @@ header{
     flex-wrap:wrap;
 }
 
+/*LOGO SITE*/
 .logo{
     display:flex;
     align-items:center;
@@ -39,7 +41,7 @@ header{
     object-fit:contain;
 }
 
-/* MENU */
+/* MENU NAVEGAÇÃO */
 
 nav{
     display:flex;
@@ -119,6 +121,7 @@ main img{
     display:block;
     margin:20px auto;
 }
+/*RECEITAS*/
 
 .card{
     background:white;
@@ -128,6 +131,7 @@ main img{
     text-align:center;
 }
 
+/*IMAGEM RECEITAS*/
 .card img{
     width:100%;
     height:220px;
@@ -196,7 +200,7 @@ li{
     margin-bottom:8px;
 }
 
-/* TABELA */
+/* TABELA NUTRICIONAL */
 
 table{
     width:100%;
@@ -243,6 +247,8 @@ textarea{
 textarea{
     min-height:120px;
 }
+
+/*BOTÕES*/
 
 button{
     width:120px;
